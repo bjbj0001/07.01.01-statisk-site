@@ -71,6 +71,13 @@ img {
   font-weight: bold;
   border-radius: 5px;
 }
+.soldOut2 {
+  display: none;
+}
+.soldOut .soldOut2 {
+  display: block;
+  background-color: red;
+}
 
 /*  GRID ****/
 main {
