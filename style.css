@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/********** Nav Menu ***********/
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #254b39;
+  color: #fff;
+}
+
+.mainNav h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.main {
+  padding: 20px;
+}
+
+.categorylist a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/****** GRID til category side ********/
+
+.categorylist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 10%;
+}
+
+.categorylist a {
+  display: block;
+  padding: 35px;
+  background-color: #254b39;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Grid layout for products */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Product {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.Product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Product h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.Product p {
+  color: #666;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.discounted {
+  color: red;
+}
+
+.Product a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.onSale {
+  border: 2px solid #ff9900;
+}
