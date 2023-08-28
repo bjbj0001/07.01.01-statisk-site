@@ -13,8 +13,19 @@ function showProduct(product) {
   const template = document.querySelector("#ProductTemplate").content;
   //lav en kopi
   const copy = template.cloneNode(true);
+
+  const total = product.price - (product.price / 100) * product.discount;
+  console.log(total);
+
   //ændre indhold
   copy.querySelector("h3").textContent = product.productdisplayname;
+  //copy.querySelector("p.price").textContent = product.price;
+  copy.querySelector(".articletype").textContent = product.articletype;
+  copy.querySelector(".brandname").textContent = product.brandname;
+  copy.querySelector(".price span").textContent = product.price;
+  copy.querySelector(".finalprice").textContent = total;
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
   //appende
   document.querySelector("main").appendChild(copy);
 }
