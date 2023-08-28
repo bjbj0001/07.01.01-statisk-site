@@ -14,6 +14,7 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
+  copy.querySelector("h3").textContent = product.productdisplayname;
   //appende
   document.querySelector("main").appendChild(copy);
 }
