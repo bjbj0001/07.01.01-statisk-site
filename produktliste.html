@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>produktliste</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="base.css" />
-</head>
-<body>
-  <main>
-        <header class="mainNav">
-      <a href="index.html">
-        <h1>Logo</h1>
-      </a>
-      <nav>
-        <a href="produkt.html">Produkter</a>
-        <a href="#">Brands</a>
-      </nav>
-    </header>
-    <h2>T-shirts</h2>
-    <article class="Product">
-      <img
-        src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp"
-        alt="Sahara Team India Fanwear Round Neck Jersey"
-      />
-      <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-      <p class="subtle">Tshirts | Nike</p>
-      <p class="price">DKK 1595.-</p>
-      <a href="produkt.html">Read more</a>
-    </article>
-    <article class="ProductOnSale">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>produktliste</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <main>
+      <header class="mainNav">
+        <a href="index.html">
+          <h1>Logo</h1>
+        </a>
+        <nav>
+          <a href="produkt.html">Produkter</a>
+          <a href="#">Brands</a>
+        </nav>
+      </header>
+      <h2>T-shirts</h2>
+      <template id="ProductTemplate">
+        <article class="Product">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
+          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          <p class="subtle">Tshirts | Nike</p>
+          <p class="price">DKK 1595.-</p>
+          <a href="produkt.html">Read more</a>
+        </article>
+      </template>
+      <!--- <article class="Product OnSale">
       <img
         src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
         alt="Blue T20 Indian cricket jersey"
@@ -46,7 +45,7 @@
         </div>
       <a href="produkt.html">Read more</a>
     </article>
-        <article class="ProductSoldOut">
+        <article class="Product SoldOut">
       <img
         src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
         alt="Blue T20 Indian cricket jersey"
@@ -59,7 +58,7 @@
         </div>
       <a href="produkt.html">Read more</a>
     </article>
-        <article class="ProductBothSoldSale">
+        <article class="Product onSale solOut">
       <img
         src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
         alt="Blue T20 Indian cricket jersey"
@@ -76,8 +75,8 @@
           <p>Sold Out-</p>
         </div>
       <a href="produkt.html">Read more</a>
-    </article>
-  </main>
-  <script src="produktliste.js"></script>
-</body>
+    </article> 
+    --></main>
+    <script src="produktliste.js"></script>
+  </body>
 </html>
