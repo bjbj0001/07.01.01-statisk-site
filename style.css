@@ -82,15 +82,16 @@ img {
 /*  GRID ****/
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 20px;
   justify-content: center;
   padding: 20px;
+  margin: 5%;
 }
 
 .Product {
   background-color: #f0f0f0;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
   text-align: center;
 }
