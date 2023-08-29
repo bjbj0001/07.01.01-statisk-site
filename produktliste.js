@@ -32,7 +32,5 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
-  /* copy.querySelector(".accessories").setAttribute("href", `produktliste.html?id=${product.brandname}`); */
-  //appende
   document.querySelector("main").appendChild(copy);
 }
