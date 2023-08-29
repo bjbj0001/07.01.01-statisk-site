@@ -133,3 +133,13 @@ main {
 .onSale2 {
   border: 2px solid #ff9900;
 }
+
+/* FADE IN */
+
+main {
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}

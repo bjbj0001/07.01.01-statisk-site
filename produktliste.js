@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -29,6 +32,7 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
+  /* copy.querySelector(".accessories").setAttribute("href", `produktliste.html?id=${product.brandname}`); */
   //appende
   document.querySelector("main").appendChild(copy);
 }

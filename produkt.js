@@ -8,4 +8,5 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product) {
   console.log(product);
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  document.querySelector("main").classList.remove("hidden");
 }
