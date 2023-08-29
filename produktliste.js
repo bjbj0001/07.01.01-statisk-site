@@ -28,29 +28,7 @@ function showProduct(product) {
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
-
-  //copy.querySelector(".soldOut").textContent = souldout;
+  copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
   //appende
   document.querySelector("main").appendChild(copy);
 }
-
-/*  <template id="ProductTemplate">
-    <article class="Product">
-      <img
-        src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp"
-        alt="Sahara Team India Fanwear Round Neck Jersey"
-      />
-      <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-      <p class="subtle">Tshirts | Nike</p>
-      <p class="price">DKK 1595.-</p>
-      <a href="produkt.html">Read more</a>
-    </article>
-    </template>  */
-
-/* Object { 
-        id: 1526, 
-        gender: "Unisex", 
-        category: "Accessories", 
-        subcategory: "Bags", 
-articletype: "Backpacks", season: "Fall", productionyear: 2010, usagetype: "Sports", 
-productdisplayname: "Big Cat Backpack Black", price: 1299, … } */

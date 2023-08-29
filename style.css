@@ -99,6 +99,7 @@ main {
 .Product img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .Product h3 {
@@ -129,6 +130,6 @@ main {
   border-radius: 5px;
 }
 
-.onSale {
+.onSale2 {
   border: 2px solid #ff9900;
 }
