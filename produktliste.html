@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produktliste</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css" />
   </head>
-  <body>
+  <body class="category">
     <header>
       <nav class="nav_menu">
         <div class="ikon">
-          <a href="index.html"><img src="svg/ikon.svg" alt="ikon" /></a>
+          <p>THE SPORT SHOP</p>
         </div>
         <ul class="nav_links">
           <li><a href="kategori.html">Kategori</a></li>
@@ -25,7 +25,6 @@
         </div>
       </nav>
     </header>
-    <h2>T-shirts</h2>
     <main>
       <template id="ProductTemplate">
         <article class="Product">
@@ -38,9 +37,7 @@
             <p>-34%</p>
             <p class="finalprice">Now DKK 1560,-</p>
           </div>
-          <div class="soldOut2">
-            <p>Sold Out</p>
-          </div>
+          <div class="soldOut2"></div>
           <a class="read_more" href="produkt.html">Read more</a>
         </article>
       </template>

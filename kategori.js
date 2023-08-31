@@ -3,20 +3,16 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
   .then(showCategories);
 
 function showCategories(categories) {
-  //looper og kalder showProduct
-  categories.forEach(showCategory);
-}
+  const categoryList = document.querySelector(".categorylist");
 
-function showCategory(oneCategory) {
-  console.log(oneCategory);
-  //fang template
-  const template = document.querySelector("template").content;
-  //lav en kopi
-  const copy = template.cloneNode(true);
+  categories.forEach((oneCategory) => {
+    const template = document.querySelector("template").content;
+    const copy = template.cloneNode(true);
 
-  copy.querySelector(".category").textContent = oneCategory.category;
-  copy.querySelector(".category").href = `produktliste.html?category=${oneCategory.category}`;
+    const categoryLink = copy.querySelector(".category");
+    categoryLink.textContent = oneCategory.category;
+    categoryLink.href = `produktliste.html?category=${oneCategory.category}`;
 
-  //appende
-  document.querySelector("main").appendChild(copy);
+    categoryList.appendChild(copy);
+  });
 }

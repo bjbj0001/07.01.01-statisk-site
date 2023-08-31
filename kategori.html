@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="base.css" />
   </head>
   <body class="category">
-    <header class="mainNav">
-      <a href="index.html">
-        <h1>Logo</h1>
-      </a>
-      <nav>
-        <a href="produkt.html">Produkter</a>
-        <a href="#">Brands</a>
+    <header>
+      <nav class="nav_menu">
+        <div class="ikon">
+          <p>THE SPORT SHOP</p>
+        </div>
+        <ul class="nav_links">
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="produkt.html">Product</a></li>
+          <li><a href="produktliste.html">Productlist</a></li>
+        </ul>
+        <div class="burger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
       </nav>
     </header>
+
     <main>
-      <h2>Categories</h2>
       <section class="categorylist">
-        <template><a class="category" href="produktliste.html">Accessories</a></template>
+        <!-- Categories will be appended here -->
       </section>
     </main>
+
+    <template>
+      <a class="category" href="produktliste.html">Accessories</a>
+    </template>
+    <script src="burgermenu.js"></script>
     <script src="kategori.js"></script>
   </body>
 </html>

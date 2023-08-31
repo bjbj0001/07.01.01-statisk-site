@@ -12,9 +12,13 @@ function showProduct(product) {
   productImg.src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   const productDetailCopy = productDetailTemplate.cloneNode(true);
 
+  //season
+  const seasonText = productDetailCopy.querySelector(".season");
+  seasonText.textContent = `Season: ${product.season}`;
+
   //Price
   const priceText = productDetailCopy.querySelector("h3");
-  priceText.textContent = `Price: DKK ${product.price}`;
+  priceText.textContent = `Price: DKK ${product.price},-`;
 
   // Discount
   const discount = product.discount || 0;
